@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nurse Technology Wall Unit</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_med_string">Add a New Medicine</string>
+    <string name="view_log_string">View Medicine Log</string>
+    <string name="doc_string">Contact a Healthcare Professional</string>
+    <string name="remove_med_string">Remove a Medicine</string>
+    <string name="language_string">Set Language</string>
+    <string name="title_activity_scan">ScanActivity</string>
+    <string name="scan_complete">Scan Complete!</string>
+    <string name="scan_med_name">Vicodin</string>
+    <string name="scan_med_name_full">hydrocodone/acetaminophen</string>
+    <string name="place_med">Place medicine in compartment 3</string>
+    <string name="title_activity_place_med">PlaceMedActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

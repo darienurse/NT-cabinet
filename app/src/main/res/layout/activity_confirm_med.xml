@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.myapplication2.app.ConfirmMedActivity">
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:layout_alignParentStart="false" android:layout_weight="1"
+                  android:background="@color/green" android:id="@+id/placeMedTitle">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceLarge" android:text="@string/scan_complete"
+                  android:gravity="center_horizontal" android:id="@+id/post_scan_status"
+                  android:textColor="@color/abc_primary_text_material_dark" android:textSize="64sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:id="@+id/relativeLayout" android:layout_below="@+id/placeMedTitle"
+            android:layout_centerHorizontal="true">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/scan_med_name"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal|top"
+                android:textSize="40sp" android:textStyle="bold" android:textAlignment="center"
+                android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/scan_med_name_full"
+                android:id="@+id/textView2"
+                android:textStyle="italic"
+                android:layout_below="@+id/textView" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:id="@+id/frameLayout" android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true">
+        <ImageView
+                android:layout_width="217dp"
+                android:layout_height="220dp"
+                android:id="@+id/imageView2" android:src="@drawable/vicodin"
+                android:layout_gravity="center_horizontal|bottom" android:layout_marginBottom="50dp"/>
+        <ImageView
+                android:layout_width="317dp"
+                android:layout_height="321dp"
+                android:id="@+id/circleView" android:src="@drawable/circle"
+                android:layout_gravity="center_horizontal|bottom"/>
+    </FrameLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Is this informtion correct?"
+            android:id="@+id/textView4"
+            android:textSize="22sp"
+            android:layout_below="@+id/frameLayout" android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Yes"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_toRightOf="@+id/relativeLayout"
+            android:layout_toEndOf="@+id/relativeLayout" android:background="@color/green"
+            android:textColor="@color/abc_primary_text_material_dark" android:textSize="22sp" android:clickable="true"
+            android:onClick="launchPlacementActivity"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="No"
+            android:id="@+id/button2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/relativeLayout" android:layout_toStartOf="@+id/relativeLayout"
+            android:background="@color/red" android:textColor="@color/abc_primary_text_material_dark"
+            android:textSize="22sp" android:onClick="quitActivity" android:clickable="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.myapplication2.app.PlaceMedActivity">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:background="@color/red" android:id="@+id/placeMedTitle">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/place_med"
+                android:gravity="center_horizontal"
+                android:id="@+id/textView3" android:textColor="@color/abc_primary_text_material_dark"
+                android:textSize="64sp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="right"
+                 android:layout_weight="3" android:layout_below="@+id/placeMedTitle">
+        <ImageView android:layout_width="158dp" android:layout_height="158dp"
+                   android:id="@+id/pulseCircleView" android:src="@drawable/filled_circle_red"
+                   android:layout_gravity="center"/>
+        <ImageView android:layout_width="188dp" android:layout_height="192dp" android:id="@+id/numberView"
+                   android:src="@drawable/number3" android:layout_gravity="center"/>
+    </FrameLayout>
+</RelativeLayout>
