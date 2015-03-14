@@ -2,7 +2,8 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context="com.example.myapplication2.app.ConfirmMedActivity">
+                tools:context="com.example.myapplication2.app.ConfirmMedActivity"
+                android:clickable="false">
 
     <LinearLayout
             android:orientation="horizontal"
@@ -85,11 +86,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Is this informtion correct?"
+            android:text="Is this information correct?"
             android:id="@+id/textView4"
-            android:textSize="22sp"
-            android:layout_below="@+id/frameLayout"
-            android:layout_centerHorizontal="true"/>
+            android:textSize="32sp"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/button2"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_above="@+id/button"/>
 
     <Button
             android:layout_width="wrap_content"

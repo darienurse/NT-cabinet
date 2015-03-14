@@ -16,5 +16,7 @@
     <string name="title_activity_place_med">PlaceMedActivity</string>
     <string name="title_activity_details">DetailsActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tab_details">TabDetailsActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
 
 </resources>

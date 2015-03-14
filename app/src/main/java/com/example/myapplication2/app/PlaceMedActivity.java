@@ -1,19 +1,18 @@
 package com.example.myapplication2.app;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 
-public class PlaceMedActivity extends ActionBarActivity {
+public class PlaceMedActivity extends Activity {
     ImageView pulseCircle;
 
     @Override
@@ -54,7 +53,7 @@ public class PlaceMedActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void endAnimations(){
+    private void endAnimations() {
         pulseCircle.clearAnimation();
         ImageView numberCircle = (ImageView) findViewById(R.id.numberView);
         LinearLayout title = (LinearLayout) findViewById(R.id.placeMedTitle);
@@ -69,7 +68,8 @@ public class PlaceMedActivity extends ActionBarActivity {
     }
 
     private void launchDetails() {
-        Intent myIntent = new Intent(getBaseContext(), DetailsActivity.class);
+        Intent myIntent = new Intent(getBaseContext(), TabDetailsActivity.class);
         startActivity(myIntent);
+        finish();
     }
 }

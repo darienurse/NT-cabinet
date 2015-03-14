@@ -1,5 +1,6 @@
 package com.example.myapplication2.app;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -10,7 +11,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 
-public class ConfirmMedActivity extends ActionBarActivity {
+public class ConfirmMedActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,7 @@ public class ConfirmMedActivity extends ActionBarActivity {
     public void launchPlacementActivity(View v) {
         Intent myIntent = new Intent(getBaseContext(), PlaceMedActivity.class);
         startActivity(myIntent);
+        finish();
     }
 
     public void quitActivity(View v) {

@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class DetailsActivity extends Activity {
+
+public class InfoActivity extends Activity {
 
     ExpandableListAdapter listAdapter;
     ExpandableListView expListView;
@@ -18,7 +19,7 @@ public class DetailsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
+        setContentView(R.layout.activity_info);
 
         // get the listview
         expListView = (ExpandableListView) findViewById(R.id.expandableListView);
@@ -143,8 +144,8 @@ public class DetailsActivity extends Activity {
 
         listDataChild.put(listDataHeader.get(0), drugDetails); // Header, Child data
         listDataChild.put(listDataHeader.get(1), sideEffects);
-        listDataChild.put(listDataHeader.get(2), interactions);
-        listDataChild.put(listDataHeader.get(3), precautions);
+        listDataChild.put(listDataHeader.get(2), precautions);
+        listDataChild.put(listDataHeader.get(3), interactions);
         listDataChild.put(listDataHeader.get(4), preganacy);
     }
 }

@@ -105,7 +105,7 @@ public class ScanActivity extends Activity implements ScanditSDKListener {
             }
         }
 
-        Toast.makeText(this, symbology + ": " + cleanedBarcode, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, symbology + ": " + cleanedBarcode, Toast.LENGTH_LONG).show();
         Intent myIntent = new Intent(getBaseContext(), ConfirmMedActivity.class);
         startActivity(myIntent);
         finish();
